@@ -213,17 +213,19 @@ footer p{
 .blog-date small{
   font-size: 15px;
 }
-.blog-info p{
-  top: 100%;
-  position: absolute;
-  padding: 25px;
-
+.blog-info{
+  padding: 10px;
 }
 .blog-main-section .grid-item{
-  padding-top: 90px;
+  padding-top: 10px;
 }
 .blog-main-section{
   padding-bottom: 70px;
+}
+.right-header-img:hover .blog-info, .blog-main-section .images:hover .blog-info{
+  background: #ff3b40;
+  width: 100%;
+  color: white;
 }
 /* -------------------About ---------------------- */
 .right-header-about{
