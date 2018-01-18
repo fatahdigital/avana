@@ -1,0 +1,23 @@
+
+
+.grid-item { width: 50%; }
+.text-wrapper{
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  width: 380px;
+  font-size: 5px;
+  color: white;
+}
+img{max-width: 100%;}
+.effect{
+  height: 100%;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  background: rgba(221,122,123,0.5);
+  display: none;
+}
+.content-wrapper:hover .effect{
+  display: block;
+}

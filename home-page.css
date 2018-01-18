@@ -10,7 +10,7 @@
 .home-image1{
 }
 .home-para{padding-top: 30px;}
-.home-image2{width: 460px;}
+/* .home-image2{width: 460px;} */
 .col6{margin-top: 0;}
 .img{margin-top: 20px;}
 .home-footer-head{text-align: center;}
@@ -41,16 +41,21 @@ ul {
   font-size: 25px;
   color: white;
 }
+img{max-width: 100%;}
 .effect{
-  
+  height: 100%;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  background: rgba(221,122,123,0.5);
+  display: none;
 }
-.content-wrapper{
-
+.content-wrapper:hover .effect{
+  display: block;
 }
 .content-wrapper:hover img{
   opacity: .5;
 }
-.content-wrapper:hover .effect{
-  height: 30px;
-  position: absolute;
-}
+
+
+.grid-item { width: 50%; }
