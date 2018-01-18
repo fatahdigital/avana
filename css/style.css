@@ -304,6 +304,8 @@ h3{
   font-family: 'Archivo Black', sans-serif;
   font-size: 16px;
 }
+
+
 /* -------------------project detail ---------------------- */
 
 .Project-detail-hero{
@@ -318,6 +320,19 @@ h3{
 }
 .work-img{
   padding: 25px 0;
+}
+.Project-detail-hero a{
+  color: #ff3b40;
+}
+.Project-detail-hero a:hover{
+  color: black;
+  text-decoration: none;
+}
+.Project-detail-hero a:hover i{
+    color: #ff3b40;
+}
+.Project-detail-hero a i{
+  color: black;
 }
 /* -------------------About ---------------------- */
 .right-header-about{
