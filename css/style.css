@@ -132,6 +132,7 @@ body{
   color: #404040;
   background: #f6f6f6;
   font-family: 'Archivo Black', sans-serif;
+  text-align: center;
 }
 
 
@@ -226,6 +227,97 @@ footer p{
   background: #ff3b40;
   width: 100%;
   color: white;
+}/* ------------------- Blog-detail ---------------------- */
+.blog-detail-hero{
+  font-family: 'Lato', sans-serif;
+
+}
+img{
+  max-width: 100%;
+}
+h3{
+    font-family: 'Archivo Black', sans-serif;
+
+}
+.blog-detail-hero h3 span{
+  color: #ff3b40;
+}
+.blog-detail, .blog-details-image{
+  padding: 30px 0;
+}
+.blog-detail-info{
+  text-align: left;
+
+}
+.blog-detail-hero hr{
+  border-color: #bbb;
+}
+.comment-count{
+  text-align: left;
+}
+.client-comment{
+  text-align: left;
+}
+.client-comment h4{
+  font-family: 'Archivo Black', sans-serif;
+}
+.client-comment a{
+  color: #ff3b40;
+}
+.client-comment a:hover{
+  text-decoration: none;
+}
+.client-comment a, .client-comment h4{
+  display: inline;
+  padding-right: 20px;
+}
+.comment{
+  padding: 15px 0;
+}
+.post-comment-details textarea{
+  text-align: left;
+  padding: 0 15px;
+}
+.post-comment-details p{
+  text-align: left;
+
+  padding: 20px 0 15px 15px;
+}
+.post-comment-details input, textarea{
+  border: none;
+  background: none;
+  width: 100%;
+  border-bottom: solid 1px #bbbbbb;
+}
+.blog-detail-hero button{
+  background: #ff3b40;
+  border: none;
+  width: 180px;
+  height: 40px;
+}
+.btn:hover{
+  color: white;
+}
+.btn{
+  padding: 25px 0;
+  color: white;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 16px;
+}
+/* -------------------project detail ---------------------- */
+
+.Project-detail-hero{
+  text-align: left;
+}
+.Project-detail-wrapper{
+  padding: 50px;
+
+}
+.project-detail-info{
+    font-family: 'Lato', sans-serif;
+}
+.work-img{
+  padding: 25px 0;
 }
 /* -------------------About ---------------------- */
 .right-header-about{
