@@ -1,0 +1,36 @@
+.blog-head-para{
+  font-size: 2rem;
+  color: #403E4F;
+}
+.para{padding-left: 11rem;}
+.header-image{
+  width: 900px;
+  padding: 30px 0 30px 0;
+}
+.media-image{
+  height: 50px;
+  width: 40px;
+}
+.comments{
+  font-weight: bold;
+}
+.media-head{
+  font-weight: bold;
+}
+.reply-link{
+  color: #FB3A3F;
+  font-weight: bold;
+  font-size: 12px;
+  padding-left: 20px;
+}
+.btna{
+  background: #FF3B40;
+  color: white;
+  padding: 12px;
+  border: none;
+}
+/* body{overflow-x: hidden;} */
+.twenty{
+  color: #FB3A3F;
+  font-weight: bold;
+}

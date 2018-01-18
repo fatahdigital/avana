@@ -1,0 +1,127 @@
+
+<html>
+    <head>
+      <title></title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet"  href="avana.css">
+      <link rel="stylesheet"  href="home-page.css">
+      <link rel="stylesheet"  href="about.css">
+      <link rel="stylesheet"  href="contact.css">
+      <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet"  href="mdb\css\mdb.css">
+      <link rel="stylesheet"  href="mdb\css\style.css">
+    </head>
+    <body>
+      <div class="container contain">
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#">Work</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8">
+            <h2 class="brand-logo">AV</h2>
+          </div>
+          <div class="col-sm-4">
+            <span style="font-size:30px;cursor:pointer;float:right;" onclick="openNav()">&#9776; </span>
+          </div>
+        </div><!--End row-->
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-1">
+            <h1 class="home-head-title">Hey Thr!</h1>
+            <h2 class="home-head-subtitle">We love to hear you.</h2>
+              <p class="home-para"><i class="fa fa-phone " aria-hidden="true">+767878787</i>
+              <i class="fa fa-envelope ev" aria-hidden="true">contact@avana.com</i></p>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="">
+              <article class="content">
+                <div id="map" style="width:400px;height:400px;background:yellow"></div>
+              </article>
+            </div>
+          </div>
+        </div><!--End row-->
+        <div class="row">
+          <div class="col-sm-offset-1 col-sm-5">
+            <div class="md-form">
+              <input type="text" id="form1" class="form-control" placeholder="Whats your name?">
+              <!-- <label for="form1" class=""></label> -->
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="md-form">
+              <input type="text" id="form1" class="form-control" placeholder="Whats your email?">
+              <!-- <label for="form1" class=""></label> -->
+            </div>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-offset-1 col-sm-9">
+              <div class="md-form">
+                <input type="text" id="form1" class="form-control" placeholder="whats in your mind?">
+                <!-- <label for="form1" class=""></label> -->
+              </div>
+            </div>
+            <div class="col-sm-offset-5 col-sm-3">
+              <button type="button" name="button" class="btna">POST COMMENTS</button>
+            </div>
+         </div>
+
+
+
+
+
+        </div><!--end container-->
+        <section class="footer">
+          <h2 class="home-footer-head">AV</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-offset-4 col-sm-4">
+                <ul class="footer-list">
+                  <li>WORK</li>
+                  <li>ABOUT</li>
+                  <li>BLOG</li>
+                  <li>CONTACT</li>
+                </ul>
+              </div>
+              <div class="col-sm-offset-5 col-sm-4 col-xs-offset-3 col-xs-6">
+                <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-pinterest fa-2x" aria-hidden="true"></i>
+              </div>
+            </div><!--end row-->
+          </div><!--end container-->
+        </section>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+      function myMap() {
+        var mapOptions = {
+            center: new google.maps.LatLng(51.5, -0.12),
+            zoom: 10,
+            mapTypeId: google.maps.MapTypeId.HYBRID
+        }
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaLn5UxxpfJYGKok8LfxVIGGl0eyR6JBs&callback=myMap">
+    </script>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>
