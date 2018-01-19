@@ -55,6 +55,9 @@ body {
   color: #FF3B40;
   font-weight: bold;
 }
+.head-subtitle:hover{
+  color: gray;
+}
 /*--------------head-para1---------------------*/
 .head-para1{
   letter-spacing: 1px;
@@ -69,10 +72,10 @@ body {
   font-size: 17px;
   color: #666666;
 }
-.image1,.image2,.image3{
-  height: 400px;
-  width: 800px;
+.image2,.image3{
+  padding-top: 30px;
 }
+.image-container{padding-top: 50px;}
   margin-top: 40px;
 .project-footer-head{text-align: center;}
 ul

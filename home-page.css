@@ -1,3 +1,7 @@
+
+.overlay{
+  background: rgba(253,253,253,0.7);
+}
 .home-head-subtitle{
   font-weight: bold;
   line-height: 0px;
@@ -19,14 +23,21 @@ ul
   display:flex;
   list-style:none;
 }
-ul li{padding-left: 10px;padding-top: 30px;padding-bottom: 30px;}
+ul li{padding: 30px 0 30px 15px;font-weight: 600;}
 ul {
     margin: auto;
 }
 .fa-2x{
-  padding-left: 10px;
+  padding-left: 15px;
+  border-radius: 40px;
+  background: gray;
 }
-
+ul li:hover{
+  color: red;
+  cursor: pointer;
+}
+.footer{padding: 30px 0 40px 0; }
+.footer{background: white;}
 .fa{}
 .fa:hover{cursor: pointer;}
 .fa-facebook:hover{color: blue;}
@@ -53,9 +64,8 @@ img{max-width: 100%;}
 .content-wrapper:hover .effect{
   display: block;
 }
-.content-wrapper:hover img{
+/* .content-wrapper:hover img{
   opacity: .5;
-}
-
-
+} */
 .grid-item { width: 50%; }
+h2{font-weight: 500;}

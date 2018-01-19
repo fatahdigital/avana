@@ -13,3 +13,22 @@
 .footer{
   background: white;
 }
+/*--------------------------------------------hovering----------------------------------------------*/
+.imagebox{
+  position: relative;
+  overflow: hidden;
+}
+.imagebox img{}
+.textbox{
+  position: absolute;
+  top: 460;
+  left: 90;
+  background: rgba(255,59,64,0.8);
+  transition: 1s;
+  color: white;
+}
+.imagebox:hover .textbox{top: 350;}
+.manager {
+  padding-left: 20px;
+  font-size: 20px;
+}

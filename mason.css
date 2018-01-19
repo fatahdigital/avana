@@ -21,3 +21,12 @@ img{max-width: 100%;}
 .content-wrapper:hover .effect{
   display: block;
 }
+.content-wrapper{
+  padding-top: 20px;
+}
+body{
+  background: #eee;
+}
+.footer{
+  padding: 20px 0 20px 0;
+}
