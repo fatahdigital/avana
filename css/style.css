@@ -144,10 +144,15 @@ nav ul li a:hover{
 }
 /* -------------------------- left header ------------- */
 .left-header h1{
-  padding-top: 100px;
+  padding-top: 13%;
   color: #ff3b40;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 5em;
+  margin-bottom: 0;
+
+}
+.left-header h3{
+  margin-top: 0;
 }
 .right-header-img{
   width: 100%;
@@ -162,8 +167,15 @@ body{
   font-family: 'Archivo Black', sans-serif;
   text-align: center;
 }
-
-
+.left-header{
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+.left-header p{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+}
 
 
 /* ----------------- footer section -------------------- */
@@ -171,6 +183,9 @@ footer{
   text-align: center;
   color: #9d9da3;
   background: white;
+}
+footer ul{
+  display: inline;
 }
 footer ul li{
   text-align: center;
@@ -183,6 +198,7 @@ footer ul li{
 }
 footer ul li a{
   color: #9d9da3;
+  display: inline;
 }
 footer ul li a:hover{
   text-decoration: none;
@@ -205,23 +221,23 @@ footer i{
 footer i:hover{
   background: #ff3b40;
 }
+.social-icon{
+  padding-top: 20px;
+}
 .social-icon a{
   padding: 7px;
-  padding-bottom: 100px;
+
 }
 footer p{
   padding-top: 50px;
   padding-bottom: 40px;
 }
-
 /* HOme page */
 .gallery-wrapper {
   overflow: hidden;
 }
-
 .grid-item {
   padding-bottom: 25px;
-
 }
 
 /* -------------------Blog ---------------------- */
@@ -258,7 +274,7 @@ footer p{
 }/* ------------------- Blog-detail ---------------------- */
 .blog-detail-hero{
   font-family: 'Lato', sans-serif;
-
+  padding-top: 60px;
 }
 img{
   max-width: 100%;
@@ -282,6 +298,8 @@ h3{
 }
 .comment-count{
   text-align: left;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 .client-comment{
   text-align: left;
@@ -304,18 +322,17 @@ h3{
 }
 .post-comment-details textarea{
   text-align: left;
-  padding: 0 15px;
-}
-.post-comment-details p{
-  text-align: left;
+  padding: 10px 15px;
 
-  padding: 20px 0 15px 15px;
 }
+
 .post-comment-details input, textarea{
   border: none;
   background: none;
   width: 100%;
   border-bottom: solid 1px #bbbbbb;
+  padding-bottom: 15px;
+  margin: 15px 0;
 }
 .blog-detail-hero button{
   background: #ff3b40;
@@ -331,6 +348,7 @@ h3{
   color: white;
   font-family: 'Archivo Black', sans-serif;
   font-size: 16px;
+  margin-bottom: 40px;
 }
 
 
@@ -366,15 +384,18 @@ h3{
 .right-header-about{
   background: #ff3b40;
   color: white;
+  text-align: left;
 }
 .right-header-about p{
-  padding-top: 25px;
+  padding-top: 35px;
+  padding-bottom: 5px;
 }
 .wraper{
   margin: 0 15%;
 }
 .about-main-section{
-  padding: 25px 0;
+  padding-top: 30px;
+  padding-bottom: 70px;
 
 }
 .about-main-section img{
@@ -392,6 +413,11 @@ h3{
   bottom: 0;
   left: 23%;
   display: none;
+  transition: height 1s;
+}
+.about-img{
+  position: relative;
+  overflow: hidden;
 }
 .about-team-details p{
   padding-top: 15%;
@@ -399,8 +425,10 @@ h3{
 .about-team-details p small{
   font-weight: bold;
 }
+
 .about-main-section .about-img:hover .about-team-details{
   display: block;
+
 }
 .about-main-section .about-img:hover .about-opacity{
   background: rgba(255,59,64,0.5);
@@ -423,7 +451,7 @@ img {
   display: block;
 }
 .right-header-img:hover .img-hover-effact{
-    background: rgba(221,122,121,0.5);
+    background: rgba(255,59,64,0.5);
     display: block;
     width: 95%;
 }
@@ -458,7 +486,7 @@ img {
 .project-deatils{
   position: absolute;
   top: 50%;
-  left: 30%;
+  left: 23%;
 }
 .project-deatils p{
   font-size: 22px;
@@ -498,7 +526,6 @@ img {
   background: #f93736;
   height: 50px;
   width: 200px;
-  left: 40%;
   top: 40px;
   position: relative;
   color: white;
@@ -507,4 +534,5 @@ img {
 }
 .contact-submit-button{
   padding-bottom: 100px;
+
 }
