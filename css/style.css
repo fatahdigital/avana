@@ -462,6 +462,15 @@ h3{
   transition: 1s;
   overflow: hidden;
   width: 100%;
+  opacity: 0.6;
+}
+.blog:hover img{
+  transform: scale(1.15);
+  transition: 1s;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  opacity: 0.6;
 }
 /* -------------------home ---------------------- */
 .grid-item {
