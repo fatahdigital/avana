@@ -166,6 +166,7 @@ body{
   background: #f6f6f6;
   font-family: 'Archivo Black', sans-serif;
   text-align: center;
+
 }
 .left-header{
   text-align: left;
@@ -203,6 +204,7 @@ footer ul li a{
 footer ul li a:hover{
   text-decoration: none;
   color:#ff3b40;
+  transition: 1s;
 }
 
 footer img{
@@ -220,6 +222,7 @@ footer i{
 }
 footer i:hover{
   background: #ff3b40;
+  transition: 1.5s ;
 }
 .social-icon{
   padding-top: 20px;
@@ -373,9 +376,11 @@ h3{
 .Project-detail-hero a:hover{
   color: black;
   text-decoration: none;
+  transition: 1.5s;
 }
 .Project-detail-hero a:hover i{
     color: #ff3b40;
+    transition: 1.5s;
 }
 .Project-detail-hero a i{
   color: black;
@@ -404,7 +409,7 @@ h3{
   width: 100%;
 }
 .about-opacity .about-team-details{
-  height: 100px;
+  height: 0;
   width: 200px;
   background: #ff3b40;
   color: white;
@@ -412,12 +417,12 @@ h3{
   position: absolute;
   bottom: 0;
   left: 23%;
-  display: none;
-  transition: height 1s;
+  opacity: 0;
 }
 .about-img{
   position: relative;
   overflow: hidden;
+
 }
 .about-team-details p{
   padding-top: 15%;
@@ -425,19 +430,29 @@ h3{
 .about-team-details p small{
   font-weight: bold;
 }
-
 .about-main-section .about-img:hover .about-team-details{
-  display: block;
-
+  transition: 1.5s;
+  opacity: 1;
+  height: 100px;
+  overflow: hidden;
 }
 .about-main-section .about-img:hover .about-opacity{
   background: rgba(255,59,64,0.5);
   height: 100%;
-  width: 93%;
+  width: 100%;
   border-radius: 10px;
   cursor: pointer;
   position: absolute;
   top: 0;
+}
+.about-img:hover img{
+  transform: scale(1.1);
+  transition: 1s;
+}
+.images:hover img{
+  transform: scale(1.1);
+  transition: 1s;
+  overflow: hidden;
 }
 /* -------------------home ---------------------- */
 .grid-item { width: 50%;
@@ -447,16 +462,39 @@ h3{
 img {
   max-width: 100%;
 }
-.grid-item:hover .img-hover-border, .grid-item:hover .img-hover-effact{
-  display: block;
+.grid-item:hover .img-hover-border{
+  opacity: 1;
+  transition: 1s;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+}
+.grid-item:hover .img-hover-effact{
+  opacity: 1;
+  transition: 1s;
+
+}
+.right-header-img .img-hover-effact{
+  width: 95%;
 }
 .right-header-img:hover .img-hover-effact{
     background: rgba(255,59,64,0.5);
-    display: block;
+    opacity: 1;
+    transition: 1s;
     width: 95%;
+    transition-delay: 0.5s;
+    float: right;
 }
 .right-header-img:hover .img-hover-border{
-  display: block;
+  opacity: 1;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  transition: 1.5s;
+  overflow: hidden;
 }
 .img-hover-effact{
   width: 100%;
@@ -464,7 +502,8 @@ img {
   top: 0;
   position: absolute;
   background: rgba(255,59,64,0.5);
-  display: none;
+  overflow: hidden;
+  opacity: 0;
   cursor: pointer;
 
 }
@@ -474,13 +513,13 @@ img {
   position: relative;
 }
 .img-hover-border{
-  width: 80%;
-  height: 80%;
-  top: 10%;
-  left: 10%;
+  width: 10%;
+  height: 10%;
+  top: 50%;
+  left: 50%;
   border: solid 1px white;
   position: absolute;
-  display: none;
+  opacity: 0;
 
 }
 .project-deatils{
