@@ -270,10 +270,11 @@ footer p{
 .blog-main-section{
   padding-bottom: 70px;
 }
-.right-header-img:hover .blog-info, .blog-main-section .images:hover .blog-info{
+.grid-item:hover .blog-info, .blog-main-section .images:hover .blog-info{
   background: #ff3b40;
   width: 100%;
   color: white;
+  transition: 1s;
 }/* ------------------- Blog-detail ---------------------- */
 .blog-detail-hero{
   font-family: 'Lato', sans-serif;
@@ -445,20 +446,33 @@ h3{
   position: absolute;
   top: 0;
 }
+.about-img{
+  max-height: 100%;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
 .about-img:hover img{
   transform: scale(1.1);
   transition: 1s;
 }
+
 .images:hover img{
-  transform: scale(1.1);
+  transform: scale(1.15);
   transition: 1s;
   overflow: hidden;
+  width: 100%;
 }
 /* -------------------home ---------------------- */
-.grid-item { width: 50%;
+.grid-item {
   padding: 15px;
 }
-.gride{width: 100%; }
+.images{
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
 img {
   max-width: 100%;
 }
