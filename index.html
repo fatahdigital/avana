@@ -58,6 +58,8 @@
                 <img src="images/home-images/image-1.jpg" width="100%" />
                 <div class="img-hover-effact"></div>
                 <div class="project-deatils"><p>Studio thonix<strong>EXIBUTION</strong></p></div>
+                <div class="project-detail-containt">personal brand identity.</div>
+
                 <div class="img-hover-border"></div>
             </a>
             </div>
@@ -75,102 +77,112 @@
         <div class="row">
 
           <div class="grid">
-            <div class="grid-item col-sm-6">
+            <div class="grid-item col-sm-6 animation-element">
             <a href="project-detail.html">
                <div class="images">
                   <img src="images/home-images/image-1.jpg" />
                   <div class="img-hover-effact"></div>
                   <div class="project-deatils"><p>Studio thonix<strong>EXIBUTION</strong></p></div>
+                  <div class="project-detail-containt">personal brand identity.</div>
                   <div class="img-hover-border"></div>
                 </div>
               </a>
             </div>
-            <div class="grid-item col-sm-6">
+            <div class="grid-item col-sm-6  animation-element">
             <a href="project-detail.html">
                <div class="images">
                   <img src="images/home-images/image-2.jpg" />
                   <div class="img-hover-effact"></div>
                   <div class="project-deatils"><p>Studio thonix<strong>EXIBUTION</strong></p></div>
+                  <div class="project-detail-containt">personal brand identity.</div>
                   <div class="img-hover-border"></div>
                 </div>
               </a>
             </div>
-            <div class="grid-item col-sm-6 ">
+            <div class="grid-item col-sm-6  animation-element ">
             <a href="project-detail.html">
                <div class="images">
                   <img src="images/home-images/image-3.jpg" />
                   <div class="img-hover-effact"></div>
                   <div class="project-deatils"><p>Studio thonix<strong>EXIBUTION</strong></p></div>
+                  <div class="project-detail-containt">personal brand identity.</div>
                   <div class="img-hover-border"></div>
                 </div>
               </a>
             </div>
-            <div class="grid-item col-sm-6 ">
+            <div class="grid-item col-sm-6  animation-element">
             <a href="project-detail.html">
                <div class="images">
                   <img src="images/home-images/image-4.jpg" />
                   <div class="img-hover-effact"></div>
                   <div class="project-deatils"><p>Studio thonix<strong>EXIBUTION</strong></p></div>
+                  <div class="project-detail-containt">personal brand identity.</div>
                   <div class="img-hover-border"></div>
                 </div>
               </a>
             </div>
-            <div class="grid-item col-sm-6 ">
+            <div class="grid-item col-sm-6  animation-element">
             <a href="project-detail.html">
                <div class="images">
                   <img src="images/home-images/image-5.jpg" />
                   <div class="img-hover-effact"></div>
                   <div class="project-deatils"><p>Studio thonix<strong>EXIBUTION</strong></p></div>
+                  <div class="project-detail-containt">personal brand identity.</div>
                   <div class="img-hover-border"></div>
                 </div>
               </a>
             </div>
-            <div class="grid-item col-sm-6 ">
+            <div class="grid-item col-sm-6  animation-element">
             <a href="project-detail.html">
                <div class="images">
                   <img src="images/home-images/image-1.jpg" />
                   <div class="img-hover-effact"></div>
                   <div class="project-deatils"><p>Studio thonix<strong>EXIBUTION</strong></p></div>
+                  <div class="project-detail-containt">personal brand identity.</div>
                   <div class="img-hover-border"></div>
                 </div>
               </a>
             </div>
-            <div class="grid-item col-sm-6 ">
+            <div class="grid-item col-sm-6  animation-element">
             <a href="project-detail.html">
                <div class="images">
                   <img src="images/home-images/image-2.jpg" />
                   <div class="img-hover-effact"></div>
                   <div class="project-deatils"><p>Studio thonix<strong>EXIBUTION</strong></p></div>
+                  <div class="project-detail-containt">personal brand identity.</div>
                   <div class="img-hover-border"></div>
                 </div>
               </a>
             </div>
-            <div class="grid-item col-sm-6 ">
+            <div class="grid-item col-sm-6  animation-element">
             <a href="project-detail.html">
                <div class="images">
                   <img src="images/home-images/image-3.jpg" />
                   <div class="img-hover-effact"></div>
                   <div class="project-deatils"><p>Studio thonix<strong>EXIBUTION</strong></p></div>
+                  <div class="project-detail-containt">personal brand identity.</div>
                   <div class="img-hover-border"></div>
                 </div>
               </a>
             </div>
-            <div class="grid-item col-sm-6 ">
+            <div class="grid-item col-sm-6  animation-element">
             <a href="project-detail.html">
                <div class="images">
                   <img src="images/home-images/image-4.jpg" />
                   <div class="img-hover-effact"></div>
                   <div class="project-deatils"><p>Studio thonix<strong>EXIBUTION</strong></p></div>
+                  <div class="project-detail-containt">personal brand identity.</div>
                   <div class="img-hover-border"></div>
                 </div>
               </a>
             </div>
-            <div class="grid-item col-sm-6 ">
+            <div class="grid-item col-sm-6  animation-element">
             <a href="project-detail.html">
                 <div class="images">
                   <img src="images/home-images/image-5.jpg"/>
                   <div class="img-hover-effact"></div>
                   <div class="project-deatils"><p>Studio thonix<strong>EXIBUTION</strong></p></div>
+                  <div class="project-detail-containt">personal brand identity.</div>
                   <div class="img-hover-border"></div>
                 </div>
               </a>
@@ -225,7 +237,34 @@
   columnWidth: 0
   });
 </script>
+<script>
+var $animation_elements = $('.animation-element');
+var $window = $(window);
 
+function check_if_in_view() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+
+  $.each($animation_elements, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+      (element_top_position <= window_bottom_position)) {
+      $element.addClass('in-view');
+    } else {
+      $element.removeClass('in-view');
+    }
+  });
+}
+
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
+</script>
 
 </body>
 </html>

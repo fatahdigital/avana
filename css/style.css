@@ -1,4 +1,6 @@
-
+.animation-element {
+  position: relative;
+}
 .navbar input:checked ~ nav > ul{
   display: block;
   width: 100%;
@@ -275,7 +277,8 @@ footer p{
   width: 100%;
   color: white;
   transition: 1s;
-}/* ------------------- Blog-detail ---------------------- */
+}
+/* ------------------- Blog-detail ---------------------- */
 .blog-detail-hero{
   font-family: 'Lato', sans-serif;
   padding-top: 60px;
@@ -494,10 +497,41 @@ img {
   height: 80%;
   overflow: hidden;
 }
+.grid-item:hover .project-deatils{
+
+  transition: 1s;
+  top: 40%;
+  transform: scale(1.2);
+}
+.project-detail-containt{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  opacity: 0;
+    transform: scale(0);
+    text-transform: uppercase;
+}
+.grid-item:hover .project-detail-containt{
+  opacity: 1;
+  transition: 1s;
+  transform: scale(1);
+}
 .grid-item:hover .img-hover-effact{
   opacity: 1;
   transition: 1s;
 
+}
+.right-header-img:hover .project-deatils{
+  transform: translateY(-120%);
+  transition: 1s;
+}
+.right-header-img:hover .project-detail-containt{
+  transform: scale(1);
+  transition: 1s;
+  opacity: 1;
 }
 .right-header-img .img-hover-effact{
   width: 95%;
@@ -559,9 +593,13 @@ img {
 .contact-detail a{
   color: #343434;
   padding: 10px;
+  font-size: 20px;
+    font-family: 'Lato', sans-serif;
 }
 .contact-detail a:hover{
   text-decoration: none;
+  color: #f93736;
+  transition: 1s;
 }
 .contact-client-detail{
   padding-top: 150px;
