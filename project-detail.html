@@ -10,11 +10,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <section class="navbar">
 <div class="container">
-  <h1><img src="images/logo.png" /></h1>
+  <img src="images/logo.png" />
   <input id="burger" type="checkbox" />
   <label for="burger">
     <span></span>
@@ -60,7 +61,7 @@
   <div class="container">
 
       <div class="Project-detail-wrapper">
-        <div class="row">
+        <div class="row" data-aos="fade-up">
           <div class="col-sm-4">
             <h1>Project Name</h1>
             <a href="#" target="_blank">Visit online  <i class="fa fa-external-link" aria-hidden="true"></i></a>
@@ -78,17 +79,17 @@
             </p>
           </div>
       </div>
-      <div class="row">
+      <div class="row" data-aos="fade-up">
         <div class="col-sm-12 work-img">
           <img src="images/work/works-image-1.jpg" />
         </div>
       </div>
-      <div class="row">
+      <div class="row" data-aos="fade-up">
         <div class="col-sm-12 work-img">
           <img src="images/work/works-image-2.jpg" />
         </div>
       </div>
-      <div class="row">
+      <div class="row" data-aos="fade-up">
         <div class="col-sm-12 work-img">
           <img src="images/work/works-image-3.jpg" />
         </div>
@@ -165,5 +166,11 @@ itemSelector: '.grid-item',
 columnWidth: 0
 });
 </script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script>
+   AOS.init({
+     once: true,
+   });
+ </script>
 </body>
 </html>

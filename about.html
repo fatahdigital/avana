@@ -10,6 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -17,7 +18,7 @@
 
 <div class="container">
 
-  <h1><img src="images/logo.png" /></h1>
+  <img src="images/logo.png" />
 
   <input id="burger" type="checkbox" />
 
@@ -79,7 +80,7 @@
   <section class="about-main-section">
     <div class="container">
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-4" data-aos="fade-up">
           <div class="about-img">
             <img src="images/about-images/about-image-1.jpg" width="100%" />
             <div class="about-opacity">
@@ -90,7 +91,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4" data-aos="fade-up">
           <div class="about-img">
             <img src="images/about-images/about-image-2.jpg" width="100%" />
             <div class="about-opacity">
@@ -101,7 +102,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4" data-aos="fade-up">
           <div class="about-img">
             <img src="images/about-images/about-image-3.jpg" width="100%" />
             <div class="about-opacity">
@@ -120,13 +121,13 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-sm-4 col-sm-offset-4">
+        <div class="col-sm-4 col-sm-offset-4" data-aos="fade-up">
             <img src="images/logo.png" />
           </div>
     </div>
 
       <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
+        <div class="col-sm-6 col-sm-offset-3" data-aos="fade-up">
           <ul>
             <li><a href="#">Work</a></li>
             <li><a href="#">About</a></li>
@@ -138,7 +139,7 @@
 
       </div>
       <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
+        <div class="col-sm-6 col-sm-offset-3" data-aos="fade-up">
           <div class="social-icon">
             <a href=""><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
             <a href=""><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
@@ -162,5 +163,11 @@
   columnWidth: 0
   });
 </script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script>
+   AOS.init({
+     once: true,
+   });
+ </script>
 </body>
 </html>
