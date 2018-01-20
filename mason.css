@@ -9,7 +9,7 @@
   font-size: 5px;
   color: white;
 }
-img{max-width: 100%;}
+/* img{max-width: 100%;} */
 .effect{
   height: 100%;
   top: 0;
@@ -18,8 +18,45 @@ img{max-width: 100%;}
   background: rgba(221,122,123,0.5);
   display: none;
 }
-.content-wrapper:hover .effect{
+
+.content-wrapper:hover .border{
+  height: 80%;
+  width: 80%;
+  top: 12%;
+  left: 10%;
+  border: solid 1px white;
+  position: absolute;
+  opacity: 1;
+  transition: 0.5s;
+}
+.border{
+  height: 10%;
+  width: 10%;
+  position: absolute;
+  opacity: 0;
+  top: 40%;
+  left: 40%;
+}
+.subtitle{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  font-size: 10px;
+  opacity: 0;
+}
+.content-wrapper:hover .subtitle{
+  opacity: 1;
+  transition: 0.5s;
+  transform: scale(1.5);
+}
+.content-wrapper:hover .effect {
   display: block;
+}
+.content-wrapper:hover .text-wrapper{
+  top: 40%;
+  transform: scale(1.2);
+  transition: all .3s;
 }
 .content-wrapper{
   padding-top: 20px;

@@ -55,9 +55,11 @@ body {
   color: #FF3B40;
   font-weight: bold;
 }
+.ss:hover .fa-external-link{text-decoration: none;transition: 2s;color: yellow;}
 .head-subtitle:hover{
   color: gray;
 }
+.fa-external-link{padding-left: 10px;color: black;}
 /*--------------head-para1---------------------*/
 .head-para1{
   letter-spacing: 1px;
@@ -91,7 +93,7 @@ ul {
   padding-left: 10px;
 }
 
-.fa{}
+
 .fa:hover{cursor: pointer;}
 .fa-facebook:hover{color: blue;}
 .fa-twitter:hover{color: #1DA1F2;}
