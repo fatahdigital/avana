@@ -64,6 +64,9 @@
 body{
   background: #eee;
 }
+body[data-aos-duration='4000'] [data-aos], [data-aos][data-aos][data-aos-duration='4000']{
+    transition-duration: 400ms;
+  }
 .footer{
   padding: 20px 0 20px 0;
 }
