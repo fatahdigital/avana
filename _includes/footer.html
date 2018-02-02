@@ -1,0 +1,67 @@
+  <!-- -----------------------footer section -------------------------- -->
+  <footer>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+            <img src="images/logo.png" />
+          </div>
+    </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <ul>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">BLog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <div class="social-icon">
+            <a href=""><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-flickr fa-2x" aria-hidden="true"></i></a>
+          </div>
+          <p>
+            	&copy; 2018 avana LLC.All rights Riserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/avana/js/menu-bar.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.1/masonry.pkgd.js"></script>
+  <script>
+  $('#toggle').click(function() {
+    $(this).toggleClass('toggle-active');
+    $('#overlay').toggleClass('nav-active');
+});</script>
+  <script>
+  $('.grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 0
+  });
+</script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script>
+   AOS.init({
+     once: true,
+   });
+
+ </script>
+
+
+</body>
+</html>
